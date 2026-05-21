@@ -29,7 +29,7 @@ Git clone "https://github.com/MarceloMargreiter/Projeto_Fuzzy_Concessao_Credito.
 
 * ### Acessar o repositório clonado:
 ```bash
-cd .\Projeto_Fuzzy_Concessao_Credito\ (ALTERAR)
+cd .\Projeto_Fuzzy_Concessao_Credito\
 ```
  
 
@@ -57,36 +57,18 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ``` 
 
-* ### Execute o comando abaixo no terminal para gerar o Dashboard Streamlit:
 
-```bash
-streamlit run app.py
-```
-O app será executado no seu navegador localmente em:
-```bash
-http://localhost:8501/
-```
 
 
 ## Problemas
-- As pessoas perdem muito tempo e fica difícil fazer uma avaliação sobre os produtos de interesse para compra de um E-commerce, o que está gerando perda de vendas por conta da morosidade de avaliar o produto lendo todos os reviews.
-
-- Criar um avaliador de sentimentos para resumir se o produto é bem ou mal avaliado com base nos comentários ajudará o cliente a ter uma avaliação rápida e prática com a experiência obtida por outros clientes.
+- Tendo em vista a alta demanda para avaliação e liberação de limite de crédito de uma empresa *Fintech* onde a varredura por dados e análise humana são morrosas, necessita alguma melhoria para melhor atender os seus clientes.
 
 
 ## Requisitos do negócio
-- Vamos criar um modelo que lê comentários e diz se são positivos ou negativos, para avaliar os reviews, fazendo também uma avaliação geral com base nos comentários e comparando com os valores de rating.
+- Desenvolver um sistema que receba dois dados: ***Renda Mensal*** e ***Score do Serasa***, e devolva o **Limite de Crédito Sugerido**.
 
-- Método: Processamento de Linguagem Natural (PLN)
-
-- Disponibilizar o dasboard online para interação do cliente (*usuário*).
+- Método: ***Lógica Fuzzy*** 
 
 
 
-##  Dataset utilizado: 
-### *https://www.kaggle.com/datasets/abhayayare/e-commerce-dataset*
-* /products.csv
-* /reviews.csv
-* /users.csv
-
-        *Extraídos em 24/11/2025.
+##  Regras do negócio: 
