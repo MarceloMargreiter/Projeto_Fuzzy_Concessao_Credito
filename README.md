@@ -24,12 +24,12 @@ cd "caminho onde o repositório será clonado. (Ex.: "C:/Nova Pasta")
 * ### Clonar Projeto
 Copiar o endereço do projeto e clonar usando o Terminal do VS Code.
 ```bash 
-Git clone "https://github.com/MarceloMargreiter/Projeto_Fuzzy_Concessao_Credito.git" (ALTERAR)
+Git clone "https://github.com/MarceloMargreiter/Projeto_Fuzzy_Concessao_Credito.git"
 ```
 
 * ### Acessar o repositório clonado:
 ```bash
-cd .\Projeto__Fuzzy_Concessao_Credito\ (ALTERAR)
+cd .\Projeto_Fuzzy_Concessao_Credito\ (ALTERAR)
 ```
  
 
