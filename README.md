@@ -6,10 +6,11 @@
 
 ## Tecnologias utilizadas
 - Python 3.11.9
-- VS Code
+- VS Code   ( *IDE (Ambiente de Desenvolvimento Integrado)* )
 - matplotlib
 - networkx
 - numpy
+- scipy
 - scikit-fuzzy
 
 
@@ -49,6 +50,11 @@ python -m venv .venv
 #### **Linux ou MacOS:**   
 ```bash
 source .venv/bin/activate
+```
+### Atualize o PIP 
+PIP é o gerenciador de pacotes Python.
+```bash
+python.exe -m pip install --upgrade pip
 ```
 
 * ### Instale os pacotes necessários no ambiente virtual:
