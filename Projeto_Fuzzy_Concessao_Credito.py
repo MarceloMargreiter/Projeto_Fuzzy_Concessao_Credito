@@ -17,9 +17,11 @@ limite_credito = ctrl.Consequent(np.arange(0, 101, 1), 'Credito')
 #Funções de pertinência para score serasa
 score_serasa['baixo'] = fuzz.trimf(score_serasa.universe, [0, 0, 500])
 score_serasa['medio'] = fuzz.trimf(score_serasa.universe, [0, 500, 1000])
-score_serasa['alto'] = fuzz.trimf(score_serasa.universe, [500, 1000, 1000])    
-status_credito['reprovado'] = fuzz.trimf(status_credito.universe, [0, 0, 50])
-status_credito['aprovado'] = fuzz.trimf(status_credito.universe, [50, 100, 100])
+score_serasa['alto'] = fuzz.trimf(score_serasa.universe, [500, 1000, 1000])  
+
+#Funçoes de pertinência para status de crédito
+status_credito['reprovado'] = fuzz.trapmf(status_credito.universe, [0, 0, 30, 70])
+status_credito['aprovado'] = fuzz.trapmf(status_credito.universe, [30, 70, 100, 100])
 
 
 #Funções de pertinência para renda mensal
@@ -102,7 +104,7 @@ limite_reais = round((limite_percentual / 100) * Renda_Informada, 2)
 
 # Avaliação de status
 status_final = simulacao.output['Status']
-resultado = "Aprovado" if status_final >= 30 else "Reprovado"
+resultado = "Liberação de crédito APROVADA!" if status_final >= 40 else "Liberação de crédito REPROVADA!"
 
 print(
     f"\nRenda informada: R${Renda_Informada:.0f}"
